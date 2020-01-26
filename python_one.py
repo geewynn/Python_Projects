@@ -7,11 +7,19 @@
 # No. of Lower case Characters : 12
 
 def upper_and_lower(word):
-    word_string = word
-    upper_case = word_string.isupper()
-    lower_case = word_string.islower()
-    num_of_upper = print(len(upper_case))
-    num_of_lower = print(len(lower_case))
+    upper = []
+    lower = []
+    for letter in word:
+        if letter.isupper():
+            upper.append(letter)
+        elif letter.islower():
+            lower.append(letter)
+        else:
+            pass
+
+    num_of_upper = print(len(upper))
+    num_of_lower = print(len(lower))
+
 
     return num_of_upper, num_of_lower
 
