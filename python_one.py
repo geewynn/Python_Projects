@@ -23,4 +23,4 @@ def upper_and_lower(word):
 
     return num_of_upper, num_of_lower
 
-upper_and_lower('God is GoodGG')
+upper_and_lower('God is Good')
